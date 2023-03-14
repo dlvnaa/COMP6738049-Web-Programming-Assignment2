@@ -100,6 +100,8 @@
         </nav>
 
         <!-- Profile -->
+        @extends('template')
+		@section('content')
         <div class="container-fluid" style="margin-top: 45px">
             <div class="row">
                 <div class="col-lg-4">
@@ -177,6 +179,7 @@
                 </div>
             </div>
         </div>
+        @include('footer')	
     </body>
 
 </html>
