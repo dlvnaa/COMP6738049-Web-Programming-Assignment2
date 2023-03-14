@@ -180,6 +180,7 @@
             </div>
         </div>
         @include('footer')	
+        @endsection
     </body>
 
 </html>

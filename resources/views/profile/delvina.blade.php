@@ -153,7 +153,7 @@
 									<p class="mb-0">Skills or Hobbies</p>
 								</div>
 								<div class="col-sm-8">
-									<p class="text-muted mb-0">Listening to music and reading a book</p>
+									<p class="text-muted mb-0">Listening to music</p>
 								</div>
 							</div>
 							<hr>
@@ -172,5 +172,6 @@
 			</div>
 		</div>
 		@include('footer')	
+		@endsection
 	</body>
 </html>
