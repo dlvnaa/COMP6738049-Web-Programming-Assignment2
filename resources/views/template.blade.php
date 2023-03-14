@@ -10,11 +10,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1>Assignment 2 - Delvina Wongsono</h1> 
-      </div>     
-    </div>
+    <header>
+        <div class ="navbar flex items-center justify-between sticky top-0 z-40 bg-white">
+            <h2 class = "text4 font-bold font-serif text-slate-900">@yield('judul_halaman')</h2>
+
+            @include('header')
+           
+        </div>
+    </header>
 
       @yield('content')
 
