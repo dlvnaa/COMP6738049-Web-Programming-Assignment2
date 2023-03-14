@@ -8,6 +8,7 @@ Halo, Pak. Di sini contributors terdapat 2 akun, yaitu dlvnaa dan dlvna. Kedua a
 
 ### Tambahan:
 - Terdapat pada fitur Registration dan Pop.
+- Penambahan penggunaan reusable component tag pada bagian footer dan main content.
 - Penambahan conditional rendering @if, @endif dan @foreach.
 - Penambahan fitur registration untuk menjadi aktivis HIMSTAT, user dapat melakukan pendaftaran untuk menjadi cavis HIMSTAT.
 - Penambahan fitur Pop untuk konfirmasi bahwa sudah terdaftar.
