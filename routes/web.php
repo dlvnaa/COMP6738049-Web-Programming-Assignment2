@@ -21,3 +21,6 @@ Route::get('profile/{name}', function($name){
     return view('profile/'.strtolower($name), ["name"=>strtolower($name)]);
 }
 );
+
+use App\Http\Controllers\usercontroll;
+Route::get('/cavis/{id}', [usercontroll::class, 'name']);

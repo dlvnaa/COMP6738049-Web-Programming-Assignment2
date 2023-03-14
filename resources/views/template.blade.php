@@ -13,12 +13,16 @@
     <header>
         <div class ="navbar flex items-center justify-between sticky top-0 z-40 bg-white">
             <h2 class = "text4 font-bold font-serif text-slate-900">@yield('judul_halaman')</h2>
-            @include('footer')
            
         </div>
     </header>
-
-      @yield('content')
+      <div class = "p-5 container-fluit bg-white">
+        @yield('content')
+      </div>
+    
+    <footer>
+      @include('footer')
+    </footer>
 
   </body>
 </html>

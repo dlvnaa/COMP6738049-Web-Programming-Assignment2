@@ -41,13 +41,17 @@
             background-color: #ADEFD1FF!important;
         }
 
-        /* img{
-            border-radius: 50% !important;
-        } */
-
         .custom-card-pop-color {
             background-color: #ADEFD1FF !important;
         }
+
+        .col-lg-3 {
+				margin: auto;
+				position: absolute;
+				top: 50%;
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
     </style>
 
 
@@ -68,11 +72,11 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link rounded-5 custom-navbar-item-color<?php
-                                                                                if ($name == 'samuel') {
-                                                                                    echo ' active" aria-current="page';
-                                                                                }
+                            if ($name == 'samuel') {
+                                echo ' active" aria-current="page';
+                            }
 
-                                                                                ?>" href="samuel">Samuel</a>
+                        ?>" href="samuel">Samuel</a>
 
                         <a class="nav-link rounded-5 custom-navbar-item-color<?php
                                                                                 if ($name == 'delvina') {
@@ -102,7 +106,12 @@
         <!-- Profile -->
         @extends('template')
 		@section('content')
-        <div class="container-fluid" style="margin-top: 45px">
+        <div class="col-lg-3">
+            <button type="button" onclick="window.location='{{ url("cavis/4") }}'" class="p-2 m-1 text3 font-serif text-black bg-pink-60 rounded-4 shadow">
+                HIMSTAT cavis registration!
+            </button>
+        </div>
+        <div class="container-fluid" style="margin-top: -50px">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card mb-4 shadow rounded-4 custom-card-pop-color" style="margin: 30px; padding: 20px">
@@ -173,14 +182,12 @@
                                     <p class="text-muted mb-0">Hi, I am Nicholaus. I am a 20-year-old student currently studying computer science and statistics at Bina Nusantara University. I am passionate about technology and enjoys learning about programming languages and software development. In my free time, I like to play video games, listen to music, and watch movies. I also enjoys staying active by going for runs and playing basketball with my friends. With My dedication and hard work, I hope to one day become a successful data scientist.</p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        @include('footer')	
-        @endsection
     </body>
-
 </html>
+@endsection
+@include('footer')

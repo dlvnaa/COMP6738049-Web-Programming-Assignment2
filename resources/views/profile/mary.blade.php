@@ -47,6 +47,14 @@
             .custom-card-pop-color {
                 background-color: #ffecd9 !important;
             }
+
+            .col-lg-3 {
+				margin: auto;
+				position: absolute;
+				top: 50%;
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
         </style>
     </head>
 
@@ -97,7 +105,12 @@
         <!-- Profile -->
         @extends('template')
 		@section('content')
-        <div class="container-fluid" style="margin-top: 45px">
+        <div class="col-lg-3">
+            <button type="button" onclick="window.location='{{ url("cavis/3") }}'" class="p-2 m-1 text3 font-serif text-black bg-pink-60 rounded-4 shadow">
+                HIMSTAT cavis registration!
+            </button>
+        </div>
+        <div class="container-fluid" style="margin-top: -50px">
 
             <div class="row">
 
@@ -200,7 +213,7 @@
                 </div>
             </div>
         </div>
-        @include('footer')	
-        @endsection
     </body>
 </html>
+@endsection
+@include('footer')
